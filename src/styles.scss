@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "/assets/scss/lib.scss";
+@import "/assets/scss/reset.scss";
+
+html, body{
+  font-style: 16px;
+  background-color: $color_block;
+  color: $color_white;
+  font-family: $font_Mis;
+}

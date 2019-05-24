@@ -1,0 +1,20 @@
+$color_block: #282f44;
+$color_brown: #E6AF2E;
+$color_yellow: #f5d061;
+$color_white: #ececec;
+$font_Mis: Microsoft JhengHei;
+@mixin flex{
+  display: flex;
+}
+@mixin inline-flex{
+  display: inline-flex;
+}
+@mixin jc-ctr{
+  justify-content: center;
+}
+@mixin ai-ctr{
+  align-items: center;
+}
+@mixin flex-column  {
+  flex-direction: column;
+}
