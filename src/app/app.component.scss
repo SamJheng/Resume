@@ -1,22 +1,58 @@
 @import "../assets/scss/lib.scss";
 
-.container{
-  @include flex;
-  @include ai-ctr;
-  @include jc-ctr;
-  @include flex-column;
+.resume{
+  &__container{
+    @include flex;
+    @include ai-ctr;
+    @include jc-ctr;
+    @include flex-column;
+  }
+  &__photo{
+    display: block;
+    width: 150px;
+    height: 150px;
+    @include circle;
+  }
   &__row{
     @include flex;
     @include ai-ctr;
     @include jc-ctr;
-    padding: 25px 0;
+    padding: 15px 0;
+  }
+  &__row_column{
+    @include flex-column;
+    h1,p{
+      padding-bottom: 10px;
+    }
+  }
+  .fab{
+    font-size: 25px;
+  }
+  .fa-facebook-square+.fa-github{
+    padding: .9rem;
   }
 }
-h1{
+.ch-name,
+.job-title{
+  color: $color_white;
+  font-size: 25px;
+}
+.ch-name{
+  font-weight: bold;
+}
+.en-name{
   color: $color_yellow;
   font-size: 30px;
 }
-p{
+.my-city{
   color: $color_brown;
-  font-size: 25px;
+  font-size: 20px;
+}
+.my-mail{
+  color: $color_brown;
+  font-size: 16px;
+}
+.my-summary{
+  color: $color_brown;
+  font-size: 14px;
 }
